@@ -1,0 +1,258 @@
+/*! Desenvolvido por: NOME_FANTASIA <site> */
+body {
+    color: #444;
+    font-family: -apple-system,'avenir next',avenir,roboto,noto,ubuntu,'helvetica neue',helvetica,arial,sans-serif;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.tag-blue {
+    color: #0D47A1;
+    background: #E1F5FE;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.tag-green {
+    color: #1B5E20;
+    background: #B9F6CA;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.tag-red {
+    color: #b71c1c;
+    background: #ffebee;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.tag-yellow {
+    color: #F57F17;
+    background: #FFFDE7;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.the-title {
+    margin: 20px auto 0;
+    width: 90%;
+    max-width: 1000px;
+    text-transform: uppercase;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 60px auto 0;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.box:nth-last-of-type(1) {
+    border-bottom: 0;
+}
+
+.version {
+    width: 30%;
+}
+
+.version h2 {
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: 1;
+    margin: 0 0 12px -5px;
+}
+
+.version h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: block;
+    margin: 0;
+    line-height: 1;
+    text-shadow: 0 1px 0 rgba(255,255,255,.75);
+    color: #9E9E9E;
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+}
+
+.description {width: 70%;}
+
+.description h1 {
+    font-size: 1.4375rem;
+    line-height: 1.2;
+    font-weight: 400;
+    display: block;
+    margin: 0 0 20px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.75);
+    letter-spacing: -.035em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*
+ * ***************************************
+ * ***************  ÍCONES  **************
+ * ***************************************
+ */
+
+/*
+ * ***************************************
+ * *************  FIM ÍCONES  ************
+ * ***************************************
+ */
+.getlayer-fa {
+    display: inline-block;
+    font-size: inherit;
+    max-width: 100%;
+    height: 1em;
+    vertical-align: -.125em;
+    fill: currentColor;
+    pointer-events: none;
+    overflow: visible;
+}
+
+svg:not(:root).charging-station,
+svg:not(:root).calendar-times {
+    width: 1.125em;
+}
+
+svg:not(:root).microchip,
+svg:not(:root).wrench,
+svg:not(:root).sync-alt,
+svg:not(:root).clock {
+    width: 1em;
+}
+
+/*
+ * ***************************************
+ * ****************  PAGE  ***************
+ * ***************************************
+ */
+
+.page {
+    background: #F6F6F6;
+}
+
+.card-info {
+    position: relative;
+    max-width: 800px;
+    margin: 5% auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,.25);
+    overflow: hidden;
+    transition: all .4s ease;
+}
+
+.card-info:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+}
+
+.not-found-title {
+    font-size: 165px;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #fff;
+}
+
+.card-header {
+    padding: 20px;
+    background: #2ce5ff;
+    background-image: linear-gradient(to bottom,transparent 0,rgba(40,232,203,1) 100%);
+}
+
+.card-info .logo {
+    margin: 25px auto;
+    max-width: 290px;
+}
+
+.card-info p {
+    margin: inherit;
+    font-size: 3em;
+    text-transform: capitalize;
+    line-height: 1.5;
+    color: #0287CC;
+    padding: 0 20px;
+}
+
+.card-info .simple-text {
+    margin-top: 50px;
+    font-size: 24px;
+    color: #525252;
+    text-transform: none;
+}
+
+.card-info a {
+    text-decoration: none;
+    color: #808080;
+    cursor: pointer;
+}
+
+.card-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-icons .icon {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 7px;
+    /*padding: 20px;*/
+    border-radius: 100px;
+    background: #2ce5ff;
+    background-image: linear-gradient(to bottom,transparent 0,rgba(40,232,203,1) 100%);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 860px) {
+    .card-info {
+        margin: 10% auto;
+        width: calc(100% - 40px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-info p {
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .version, .description {width: 100%;}
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        word-break: break-all;
+    }
+
+    .box {
+        padding: 0;
+    }
+}
